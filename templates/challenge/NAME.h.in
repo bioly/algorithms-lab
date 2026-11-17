@@ -1,0 +1,12 @@
+#pragma once
+
+namespace algolab {
+
+// Challenge __NN__ - __TITLE__.
+//
+// TODO: describe the inputs, the output and the preconditions in plain words.
+//
+// Time O(?), space O(?).
+int __FUNC__();
+
+}  // namespace algolab

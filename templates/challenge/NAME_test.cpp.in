@@ -1,0 +1,20 @@
+#include "__NAME__.h"
+
+#include <gtest/gtest.h>
+
+namespace algolab {
+namespace {
+
+// TODO: replace these with real tests. Required (see AGENTS.md):
+//  1. empty or minimal input
+//  2. the worked example from the README
+//  3. the trap this challenge teaches (name the test after it)
+//  4. a large input, if performance or stack depth matters
+//  5. a randomized cross-check against a brute force (use a FIXED seed)
+
+TEST(__SUITE__, Placeholder) {
+    EXPECT_EQ(__FUNC__(), 0);
+}
+
+}  // namespace
+}  // namespace algolab

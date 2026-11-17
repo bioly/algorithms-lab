@@ -1,0 +1,10 @@
+// Step-by-step demo for Challenge __NN__: __TITLE__.
+//
+// Reproduce the algorithm from __NAME__.cpp with print statements, on one
+// small example. Show how the state changes at every step, and name the
+// decision taken. Copy the output into the README's "Watch it run" section.
+#include <iostream>
+
+int main() {
+    std::cout << "TODO: trace __TITLE__ here\n";
+}

@@ -1,0 +1,11 @@
+#include "__NAME__.h"
+
+namespace algolab {
+
+int __FUNC__() {
+    // TODO: write the solution. Comment WHY, not just what: why this
+    // container, why this type, what trap each tricky line avoids.
+    return 0;
+}
+
+}  // namespace algolab

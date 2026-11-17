@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure (debug + sanitizers)
+        run: cmake --preset sanitize -DALGOLAB_WARNINGS_AS_ERRORS=ON
+      - name: Build
+        run: cmake --build --preset sanitize -j
+      - name: Test
+        run: ctest --preset sanitize

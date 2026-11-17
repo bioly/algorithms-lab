@@ -1,0 +1,54 @@
+# __NN__ - __TITLE__
+
+| | |
+|---|---|
+| **Pattern** | TODO |
+| **Difficulty** | TODO |
+| **Solution** | [`__NAME__.cpp`](__NAME__.cpp) |
+| **Tests** | [`__NAME___test.cpp`](__NAME___test.cpp) |
+| **Trace demo** | [`__NAME___trace.cpp`](__NAME___trace.cpp) |
+
+## The problem
+
+TODO: a farmer story, a small example and its answer.
+
+## Clarifying questions
+
+- TODO
+
+## Brute force
+
+TODO: the simple approach and why it is too slow.
+
+## The key idea
+
+TODO: plain words, a small drawing, and why it is correct.
+
+## Watch it run
+
+TODO: paste the real output of the trace demo and explain the key steps.
+
+## Complexity
+
+- **Time: O(?).** TODO
+- **Space: O(?).** TODO
+
+## Tests
+
+| Input | Expected | What it checks |
+|---|---|---|
+| TODO | TODO | TODO |
+
+## Interview talking points
+
+- TODO: how to recognize the pattern, common bugs, follow-up questions.
+
+## How to run
+
+From the repository root (after `cmake --preset debug`):
+
+```bash
+cmake --build --preset debug --target __NAME___test __NAME___trace
+ctest --preset debug -L __NAME__                      # run this challenge's tests
+./build/debug/challenges/__DIR__/__NAME___trace   # watch it step by step
+```

@@ -1,0 +1,1 @@
+add_challenge(min_harvest_speed)

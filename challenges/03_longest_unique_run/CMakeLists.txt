@@ -1,0 +1,1 @@
+add_challenge(longest_unique_run)

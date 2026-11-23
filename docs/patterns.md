@@ -11,6 +11,7 @@ Keep this file up to date when you add a challenge (see [AGENTS.md](../AGENTS.md
 | [Sliding window](#sliding-window) | "longest/shortest contiguous stretch with a property" | Two edges that only move forward |
 | [Intervals](#intervals) | "overlapping", "meetings", "ranges", "schedules" | Sort by start, then sweep once |
 | [Binary search](#binary-search) | "minimum X such that...", sorted data, a yes/no test that flips once | Halve the search space with each check |
+| [Heaps](#heaps-and-priority-queues) | "top K", "K largest/smallest", "always the next best item" | Keep only the K best candidates, with the worst one on top |
 
 ## Dynamic programming
 
@@ -54,9 +55,18 @@ Keep this file up to date when you add a challenge (see [AGENTS.md](../AGENTS.md
 |---|---|---|
 | 05 | [The Harvester Speed](../challenges/05_min_harvest_speed/README.md) | Search on the answer; `hi = mid` / `lo = mid + 1` template |
 
+
 **How to recognize it:** a sorted array, or a yes/no question about a guess that goes `NNNN YYYY` (feasibility is monotonic).
 **Method:** write `Works(mid)`, pick `lo` and `hi` so the answer is always inside, and keep the invariant on every step.
 
 ## Patterns still to come
+## Heaps and priority queues
+
+| # | Challenge | Note |
+|---|---|---|
+| 06 | [The K Busiest Fields](../challenges/06_busiest_fields/README.md) | Heap of size K with the worst candidate on top; the comparator direction trap |
+
+**How to recognize it:** "top K", "K most frequent", "K closest", or any time you repeatedly need the best or worst item from a changing set.
+**Method:** decide which element must be on top (to keep the K largest, the smallest of them goes on top so it can be evicted), push, and pop when the size exceeds K.
 
 Heaps and priority queues, tries, stacks and monotonic stacks, backtracking, union-find, topological sort, two pointers on sorted data, prefix sums.

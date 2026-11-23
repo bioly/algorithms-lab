@@ -25,6 +25,7 @@ All challenges use a farmer story to keep the pictures simple.
 | 03 | [The Longest Clean Row](challenges/03_longest_unique_run/README.md) | Sliding window | O(n) time, O(1) space |
 | 04 | [Merging the Planting Schedules](challenges/04_merge_schedules/README.md) | Intervals: sort, then sweep | O(n log n) |
 | 05 | [The Harvester Speed](challenges/05_min_harvest_speed/README.md) | Binary search on the answer | O(n log M) |
+| 06 | [The K Busiest Fields](challenges/06_busiest_fields/README.md) | Heap (priority queue) of size K | O(n + m log k) |
 
 To find the right technique for a new problem, see [docs/patterns.md](docs/patterns.md), which groups the challenges by pattern and lists what each pattern "smells like".
 
